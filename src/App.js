@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import RockPicker from "./components/RockPicker";
 
+// This is a functional component! It is a POJO (plain old
+// js object) that returns JSX to be rendered. The JSX
+// can be made up of html or other components that, in turn,
+// render themselves (and their children)
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello</h1>
+      <RockPicker />
+      <RockPicker name="Jaryd" highScore="something" />
+      <RockPicker name="Bob" highScore="something" />
+      <RockPicker name="Ryan" highScore="something" />
     </div>
   );
 }
