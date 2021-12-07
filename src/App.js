@@ -1,3 +1,4 @@
+import RockPickerFunction from "./components/RockPickerFunction";
 import RockPicker from "./components/RockPicker";
 
 // This is a functional component! It is a POJO (plain old
@@ -8,9 +9,9 @@ function App() {
   return (
     <div className="App">
       <h1>Hello</h1>
-      <RockPicker />
-      <RockPicker name="Jaryd" highScore="something" />
-      <RockPicker name="Bob" highScore="something" />
+      <RockPickerFunction />
+      <RockPickerFunction name="Jaryd" highScore="something" />
+      <RockPickerFunction name="Bob" highScore="something" />
       <RockPicker name="Ryan" highScore="something" />
     </div>
   );
