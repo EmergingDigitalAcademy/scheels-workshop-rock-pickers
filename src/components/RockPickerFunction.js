@@ -1,15 +1,18 @@
-import { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 
 function RockPickerFunction(props) {
-  // can also destructure props here in function: function RockPickerFunction({name})
-  const [count, setCount] = useState(0); //default value set as 0
-  // In typescript: const [count, setCount] = useState<number>(0)
+  const count = useSelector((state) => state.count);
+  const dispatch = useDispatch();
 
-  const increase = () => setCount(count + 1);
-  const decrease = () => setCount(count - 1);
-  const reset = () => setCount(0);
-  const square = () => setCount(count * count);
+  const increase = () => dispatch({ type: 'INCREMENT' });
+  const decrease = () => dispatch({ type: 'DECREMENT' });
+  const reset = () => dispatch({ type: 'RESET' });
+  const square = () => {
+    setTimeout(() => {
+      dispatch({ type: 'SQUARE' })
+    }, 2000);
+  };
 
   // const name = this.props.name
   const name = props.name;

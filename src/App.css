@@ -9,30 +9,40 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 1s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #137a7f;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000000;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ee6b00;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  cursor: wait;
+  color: green;
+  font-size: 2em;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background-color: dodgerblue;
+  background-image: url('http://i.stack.imgur.com/kx8MT.gif');
 }

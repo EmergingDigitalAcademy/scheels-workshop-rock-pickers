@@ -1,5 +1,6 @@
 import RockPickerFunction from "./components/RockPickerFunction";
 import RockPicker from "./components/RockPicker";
+import './App.css';
 
 // This is a functional component! It is a POJO (plain old
 // js object) that returns JSX to be rendered. The JSX
@@ -8,7 +9,7 @@ import RockPicker from "./components/RockPicker";
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <h1 href="">Hello</h1>
       <RockPickerFunction />
       <RockPickerFunction name="Jaryd" highScore="something" />
       <RockPickerFunction name="Bob" highScore="something" />
